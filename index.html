@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- google fonts-->
+    <!--
+        font-family: 'Noto Serif', serif;
+        font-family: 'Playfair Display', serif;
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet"> 
+    
+    <title>frontend-test2</title>
+</head>
+<body>
+    
+
+    <!--HEADER-->
+    <section>
+        <div class="container">
+            
+            <!--banner-->
+            <div class="banner">
+                <img class="banner-img" src="./res/Octocat.png">
+            </div>
+            <!--navbar-->
+            <div class="navbar">
+                <a href="#" class="nav-item nav-item-big">Home</a>
+                <nav class="nav">
+                    <a href="#" class="nav-item">Join</a>
+                    <a href="#" class="nav-item">Parties</a>
+                    <a href="#" class="nav-item">Blogs</a>
+                    <a href="#" class="nav-item">Products</a>
+                    <a href="#" class="nav-item">Contact</a>
+                    <a href="#" class="nav-item">Shipping</a>
+                </nav>
+                <img id="navbar-expand" class="toggle-down" src="./res/icon-expand.png" onclick="toolbarBehave()">
+            </div>
+
+            <!--DROP DOWN MENU-->
+            <div id="toggle-toolbar">    
+                <hr class="hr">
+                <div id="toolbar">
+                    <div class="toolbar-box">
+                        <a href="#" class="toolbox-item">Join</a>
+                        <a href="#" class="toolbox-item">Parties</a>
+                        <a href="#" class="toolbox-item">Blogs</a>
+                        <a href="#" class="toolbox-item">Products</a>
+                        <a href="#" class="toolbox-item">Contact</a>
+                    </div>
+                    <div class="toolbar-box">
+                        <a href="#" class="toolbox-item">Shipping</a>
+                        <a href="#" class="toolbox-item">More stuff!</a>
+                        <a href="#" class="toolbox-item">Log out</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <script>
+                const toolbar = document.getElementById("toggle-toolbar");
+                const navbarExpand = document.getElementById("navbar-expand");
+                toolbar.style.maxHeight = "0vh";
+
+                function toolbarBehave(){
+                    if(toolbar.style.maxHeight == "0vh"){
+                        toolbar.style.maxHeight = "100vh";
+                        navbarExpand.className = navbarExpand.className.replace('toggle-down', 'toggle-up');
+                    }else{
+                        toolbar.style.maxHeight = "0vh";
+                        navbarExpand.className = navbarExpand.className.replace('toggle-up', 'toggle-down');
+                    }
+                }
+            </script>
+            <hr class="hr">
+        </div>
+    </section>
+
+
+
+    <!-- ABOUT US -->
+    <section style="overflow-y: hidden;">
+        <div class="container">
+            <div class="aboutus-section">
+
+                <div class="aboutus">
+                    <img class="aboutus-corner" src="./res/smooth-corner-tl.png">
+                    <img class="aboutus-corner" src="./res/smooth-corner-tr.png">
+
+                    <div class="aboutus-main">
+                        <h2 class="aboutus-title">About Us</h2>
+                        <div class="aboutus-text">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, vero distinctio ipsum blanditiis, ab <strong>something</strong> sapiente voluptatem omnis repellendus ipsa ea accusamus animi adipisci quisquam assumenda nemo temporibus, fugiat obcaecati maiores nostrum atque? <strong>another</strong> Ab autem dolore aspernatur minus hic ad, sit dignissimos officiis provident reprehenderit obcaecati atque ratione ut fugiat. Debitis corrupti cupiditate est exercitationem ab. <strong>Superman vs Batman</strong> Nesciunt perspiciatis officiis excepturi ut quis placeat a provident minima fugit tenetur ipsum, inventore velit voluptates minus ipsa qui eaque beatae sequi blanditiis expedita id? Perspiciatis aperiam voluptas quasi a vitae rem quibusdam asperiores doloremque corporis, explicabo facilis cupiditate. Quasi pariatur id beatae itaque!
+                            </p>
+                            <br>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet perspiciatis beatae, deleniti impedit ad libero consequatur voluptates nam recusandae asperiores tempora eaque autem in, itaque sunt sequi commodi corporis aut at fugiat error exercitationem. Aut sequi fugit expedita laborum, autem, voluptate delectus itaque soluta illo dolore maxime eligendi exercitationem inventore harum. Incidunt a illum suscipit labore ipsa ipsam, exercitationem aspernatur vel. Ab exercitationem pariatur harum corrupti sit illo quisquam aspernatur quo. Ipsa, totam. Incidunt odit delectus qui molestias tempore laboriosam pariatur praesentium est, voluptas facere officia libero nobis architecto at amet nesciunt obcaecati quod ipsum ut ducimus asperiores cumque, recusandae laudantium. Molestiae eligendi doloribus magnam sint, cum quo ipsum illo tenetur beatae suscipit ullam eveniet placeat mollitia quaerat fuga. Porro laudantium tempore voluptas numquam fuga modi fugiat eum quia soluta nemo, nam consequuntur hic veritatis, <strong>amongus</strong> eveniet, cumque dolores? Consectetur voluptates fugit, deleniti, tempora reiciendis vitae natus assumenda dolores quo, dicta quos delectus. Sed eos nisi, quam temporibus in tenetur! Deleniti placeat aspernatur, architecto consequatur iure hic ut corrupti omnis libero eius veniam quisquam ratione dolorem cupiditate debitis laboriosam quis quidem earum nihil culpa quasi aliquam! Velit fuga impedit quia sequi, harum rem id animi alias similique eius repellendus tenetur, illum aspernatur. <strong>bababoii</strong> Blanditiis aperiam quas debitis asperiores nulla est adipisci iure. Mollitia laudantium porro ducimus itaque nemo excepturi deleniti inventore maxime! Dicta quos similique repellendus modi non <strong>La case de papel</strong> inventore illo, aut dolor voluptas id minima libero repudiandae earum ipsum aspernatur nesciunt iusto impedit sed corrupti. Vitae enim atque exercitationem impedit eos aperiam quaerat esse! Dolore sint ut dignissimos illum ipsa sit voluptates earum molestias reprehenderit deleniti explicabo vero consequatur numquam optio corrupti, tenetur quasi atque fugiat blanditiis rem vel! Provident voluptas impedit nesciunt dolores excepturi reiciendis magni soluta animi quis tenetur eos incidunt vitae quam, iusto enim, fuga qui explicabo voluptatibus aperiam, veritatis omnis! Nulla molestias ut ullam quibusdam quisquam. Nihil porro enim, similique minima hic voluptates exercitationem animi fuga voluptatum dolorum suscipit ea! Nam, id ad, quaerat aliquid repudiandae optio tempora et sapiente animi est beatae aperiam asperiores qui ipsum. Ratione, vitae? Hic velit est, dignissimos nulla odit odio distinctio quod earum dolorum sed iste dolores architecto perspiciatis? Eius eligendi quae eaque animi consectetur vero esse dolorem? Doloremque blanditiis aliquam fuga corporis ratione nemo nobis quis doloribus! Eaque possimus hic odio laudantium officia, quibusdam doloribus ipsam cum harum ex vel, reiciendis doloremque sequi, quasi debitis consectetur non accusantium eius? Reprehenderit, eum!
+                            </p>
+                        </div>
+
+                        
+                    </div>
+
+                    <img class="aboutus-corner" src="./res/smooth-corner-tl.png">
+                    <img class="aboutus-corner" src="./res/smooth-corner-tr.png">
+                    
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+</html>
